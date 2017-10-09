@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<% include ../partials/head %>
+</head>
+
+<body>
+<section id="body" class="width">
+			<% include ../partials/header %>
+			<section id="content">
+                		
+	    <article>			
+
+
+	<div class="holder_top"></div>
+
+	<div class="holder">
+
+		<h1>MS12-020: Vulnerabilities in Remote Desktop Could Allow Remote Code Execution (2671387) (uncredentialed check)</h1>
+		<br/>
+		<p>To remove RDC Vulnerable to Man In The Middle Attack on the Windows Server 2008 and 2008 R2 perform the following : </p>
+
+		<cite>A man-in-the-middle attack can succeed only when the attacker can impersonate each endpoint to the satisfaction of the other — it is an attack on mutual authentication (or lack thereof). Most cryptographic protocols include some form of endpoint authentication specifically to prevent MITM attacks. For example, SSL can authenticate one or both parties using a mutually trusted certification authority.</cite>
+		<br/><br/>
+		<p>Changes need to be applied in the Group Policy management console. </p>
+		
+		<ul>
+			<li>Check Remote Desktop Permission to Users. Run <strong>sysdm.cpl</strong>, Click on <strong>Remote</strong> Tab &amp; Select <strong>Allow Remote Desktop to all Users (more secure)</strong></li>
+			<li>Modify Registry Values by executing following command : <strong>regedit.exe</strong>. Expand <strong>Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp. Modify PortNumber Value to 7389 (Decimal Value by clicking on Decimal Radio Button).</strong></li>
+			<li>Go To Firewall or Open Run and type <strong>firewall.cpl</strong>. Click on Advanced Settings. Create New Inbound Rule. Click on Port, give name as <strong>Custom_RDP</strong>(Any Name). Keep as it is for <strong>Domain, Private</strong> &amp; <strong>Public</strong></li>
+			<li>Go to <strong>Custom_RDP</strong> Properties. Check for <strong>enabled</strong> check box &amp; <strong>Allow the Connection</strong></li>
+			<li>Check for <strong>Programs and Services</strong> that <strong>All Programs that meet the specified conditions</strong> is selected</li>
+			<li>No Change in <strong>Computer</strong> Tab. In <strong>Protocols and Ports</strong> Tab, Check<br/>
+			<strong>Protocol Type</strong> : <strong>TCP</strong><br/>
+			<strong>Local Port</strong> - <strong>Specified Port</strong> : <strong>7389</strong><br/>
+			<strong>Remote Port</strong> - All Ports</li>
+			<li>In <strong>Scope</strong> Tab, Check for Local IP Address - Any IP Address. Add Remote IP Address &amp; Select <strong>Remote IP Address</strong> &amp; Add IP Addresses</li>
+			<li>In Advanced Tab, keep it as it is. Check for <strong>Edge-Traversal</strong> as Block edge Traversal</li>
+			<li>Restart the Server to take the changes effect</li>
+		</ul>		
+	</div>
+	</article>
+	
+	<% include ../partials/footer %>
+	</section>
+
+	<div class="clear"></div>
+
+	</section>
+
+
+</body>
+
+</html>
+
+

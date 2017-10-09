@@ -1,0 +1,252 @@
+@CHARSET "UTF-8";/*
+Template name: Light
+Template URI: http://templates.arcsin.se/light-website-template/
+Last updated: 04-Sep-2014
+Description: Bright and smooth.
+Author: Arpit Gupta
+*/
+
+/* reset */
+h1, code, ul, li {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table {border-collapse: collapse; border-spacing: 0;}
+caption, td {text-align: left; font-weight: normal;}
+table, td, th {vertical-align: middle;}
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+a img {border: none;}
+:focus {outline: 0;}
+
+
+/* standard elements */
+a {
+	font-size: 16px;
+	color: #567;
+}
+a:hover {
+	color: #28E;
+}
+body {
+	background: url(images/bg.png) repeat;
+	background-attachment: fixed;
+	font: normal 52.5% "Lucida Sans Unicode",sans-serif;
+	margin: 0;
+}
+cite,code,ul {
+	font-family: sans-serif;
+	font-style:normal;
+	font-size: 1.4em;
+}
+p{
+	font-style: normal;
+	font-size: 17px;
+	font-weight: 400;	
+}
+h1 {
+	color: #579;
+	padding-top: 3px;
+	font-size: 1.6em;
+}
+h2 {
+	color: #579;
+	padding-top: 3px;
+	font-size: 1.4em;	
+}
+h3 {
+	font-weight: lighter;
+	font-family: inherit;
+	font-size: 1.2em;
+}
+li {
+	list-style: url(images/li.gif);
+	margin-left: 18px;
+}
+code {
+	background: url(images/bgcode.gif);
+	border: 1px solid #F6F6F6;
+	color: #666;
+	display: block;
+	font: normal 1.1em "Lucida Sans Unicode",serif;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+/*
+button {
+	background:#fff;
+	font-size:1em;
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	color:#8c8a8b;
+}
+Changed by me on 17th February 2014
+
+
+button {
+	background: #f2f2f2;  // Old browsers //
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #e8e8e8 100%); // FF3.6+ //
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e8e8e8)); // Chrome,Safari4+ //
+	background: -webkit-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); // Chrome10+,Safari5.1+ //
+	background: -o-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); // Opera 11.10+ //
+	background: -ms-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); // IE10+ //
+	background: linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); // W3C //
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e8e8e8',GradientType=0 ); // IE6-9 //
+	// Generated on http://www.colorzilla.com/gradient-editor/ //
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1); 
+	border-color: #eeeced #eeeced #9b9b9b;
+    border-style: solid;
+    border-width: 1px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding:5px 30px;
+	font-weight:bold;
+	text-shadow:0px 1px 0px #fff;
+	cursor:pointer;
+}
+
+button:hover {
+	background:#f5f5f5;
+}
+
+button:focus, 
+button:active {
+	background:#e8e8e8;
+}
+
+button.action {
+	background: #fa765f; // Old browsers //
+	background: -moz-linear-gradient(top, #fa765f 0%, #e15d46 100%); // FF3.6+ //
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa765f), color-stop(100%,#e15d46)); // Chrome,Safari4+ //
+	background: -webkit-linear-gradient(top, #fa765f 0%,#e15d46 100%); // Chrome10+,Safari5.1+ //
+	background: -o-linear-gradient(top, #fa765f 0%,#e15d46 100%); // Opera 11.10+ //
+	background: -ms-linear-gradient(top, #fa765f 0%,#e15d46 100%); // IE10+ //
+	background: linear-gradient(top, #fa765f 0%,#e15d46 100%); // W3C //
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa765f', endColorstr='#e15d46',GradientType=0 ); -- IE6-9 --
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 179, 166, 1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 179, 166, 1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 179, 166, 1); 
+	border-color: #fc7f6b #fc7f6b #d0432f;
+	color:#b13e2d;
+	text-shadow:0px 1px 0px #ffb3a5;
+}
+
+button.action:hover {
+	background:#fa765f;
+}
+
+button.action:focus, 
+button.action:active {
+	background:#e15d46;
+}
+*/
+cite {
+	background: url(images/quote.gif) no-repeat;
+	color: #456;
+	display: block;
+	font: normal 1.4em "Lucida Sans Unicode",serif;
+	padding-left: 28px;
+}
+
+table {
+		
+		 border: 1px solid #ccc;
+				}
+				tr:nth-child(odd) {
+				  background: #eee;
+				}
+				tr:hover {
+				  background: #ddd;
+				}
+				th,td {
+				  border: 1px solid #ccc;
+				  padding: 8px 7px;
+				  min-width: 40px;
+				}
+				th {
+				  background: #333;
+				  color: #fff;
+				}
+
+/* floats */
+.left,.alignleft {float: left;}
+.right,.alignright {float: right;}
+
+.clear,.clearer {clear: both;}
+.clearer {
+	display: block;
+	font-size: 0;
+	line-height: 0;	
+	height: 0;
+}
+
+/* structure */
+.container {
+	margin: 0 auto;
+	width: 730px;
+}
+
+/* title */
+.title {
+	float: left;
+	margin-top: 22px;
+	text-align: center;
+	width: 220px;
+}
+.title h1 {
+	font: normal 2em Verdana,sans-serif;
+}
+.title h2 {
+	color: #999;
+	font: normal 1.1em Verdana,sans-serif;
+}
+
+/* navigation */
+.navigation {
+	background: url(images/holder.jpg) no-repeat;
+	height: 100px;
+	padding: 0 16px;
+}
+.navigation a {
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #FFF;
+	color: #89A;
+	float: right;
+	font: bold 1.2em "Trebuchet MS",sans-serif;
+	margin-top: 9px;
+	padding: 58px 18px 8px;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	background: #FFF url(images/navhover.gif) repeat-x;
+	color: #28E;
+	padding: 56px 18px 10px;
+}
+
+/* holders */
+.holder {
+	background: url(images/bgholder.jpg) repeat-y;
+	padding: 0 32px;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #579; 
+}
+.holder_top,.footer {
+	clear: both;
+	background: url(../images/holder.jpg) no-repeat;
+	height: 40px;
+}
+
+/* footer */
+.footer {
+	background-position: left bottom;
+	color: #666;
+	font-size: 1.1em;
+	text-align: center;
+	padding: 0 32px;
+}
+.footer .right, .footer .right a {color: #AAA;}
+.footer .right a:hover {color: #666;}

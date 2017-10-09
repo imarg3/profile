@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<% include ../partials/head %>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<% include ../partials/mainheader %>
+				<div class="page-header">	
+					<h3>Contact</h3>
+					<code>
+						<i class="icon ion-android-contact"></i>&nbsp;ARPIT GUPTA<br/>
+						<i class="icon ion-android-mail"></i>&nbsp;garpit@cdac.in<br/>
+						<i class="icon ion-android-call"></i>&nbsp;8805512560
+					</code>
+
+					<blockquote><p>For more information, click on <a href="arpit" target="_blank">Arpit</a> Profile</p></blockquote>
+								
+					<h2>Projects</h2>
+					<div class="row">
+						<div class="col-md-12">			
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Url</th>
+									</tr>
+								</thead>
+								<tbody>
+									<% items.forEach(function(result){ %>				
+									<tr class="active">
+										<td><%=result.id %></td>
+										<td><%=result.name %></td>
+										<td><%=result.description %></td>
+										<td><a href="<%=result.url %>" target="_blank"><%=result.url %></a></td>
+									</tr>
+									<% }) %>	
+								</tbody>
+							</table>
+						</div>
+					</div>
+				
+					<% include ../partials/footer %>		
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

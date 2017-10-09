@@ -1,0 +1,35 @@
+ory="_x81oYjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EIDIYEeaSuf95bjPhew" elementId="org.eclipse.team.cvs.ui.replaceWithTag" commandName="Replace With Another Branch or Version" description="Replace with Branch or Version on the CVS Server" category="_x81oPDIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EITIYEeaSuf95bjPhew" elementId="org.eclipse.jdt.ui.edit.text.java.select.last" commandName="Restore Last Selection" description="Restore last selection" category="_x81oWjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EIjIYEeaSuf95bjPhew" elementId="org.eclipse.egit.ui.team.Push" commandName="Push" category="_x81oUjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EIzIYEeaSuf95bjPhew" elementId="org.eclipse.egit.ui.team.stash.apply" commandName="Apply Stashed Changes" category="_x81oUjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EJDIYEeaSuf95bjPhew" elementId="org.eclipse.compare.copyAllLeftToRight" commandName="Copy All from Left to Right" description="Copy All Changes from Left to Right" category="_x81oYjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EJTIYEeaSuf95bjPhew" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_x81oWjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EJjIYEeaSuf95bjPhew" elementId="org.eclipse.help.ui.ignoreMissingPlaceholders" commandName="Do not warn of missing documentation" description="Sets the help preferences to no longer report a warning about the current set of missing documents." category="_x81oXzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EJzIYEeaSuf95bjPhew" elementId="org.eclipse.mylyn.wikitext.ui.convertToDocbookCommand" commandName="Generate Docbook" category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EKDIYEeaSuf95bjPhew" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.replace.invocations" commandName="Replace Invocations" description="Replace invocations of the selected function" category="_x81oUDIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EKTIYEeaSuf95bjPhew" elementId="org.eclipse.ui.edit.copy" commandName="Copy" description="Copy the selection to the clipboard" category="_x81oWjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EKjIYEeaSuf95bjPhew" elementId="org.eclipse.egit.ui.history.Revert" commandName="Revert Commit" category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EKzIYEeaSuf95bjPhew" elementId="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.project" commandName="Declaration in Project" description="Search for declarations of the selected element in the enclosing project" category="_x81oVzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81ELDIYEeaSuf95bjPhew" elementId="org.eclipse.egit.ui.RepositoriesViewCreateBranch" commandName="Create Branch..." category="_x81oUjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81ELTIYEeaSuf95bjPhew" elementId="org.eclipse.datatools.connectivity.commands.addprofile" commandName="New Connection Profile Command" description="Command to create a new connection profile" category="_x81oWzIYEeaSuf95bjPhew">
+    <parameters xmi:id="_x81ELjIYEeaSuf95bjPhew" elementId="org.eclipse.datatools.connectivity.ui.ignoreCategory" name="ignoreCategory"/>
+    <parameters xmi:id="_x81ELzIYEeaSuf95bjPhew" elementId="org.eclipse.datatools.connectivity.ui.useSelection" name="useSelection"/>
+  </commands>
+  <commands xmi:id="_x81EMDIYEeaSuf95bjPhew" elementId="org.eclipse.ant.ui.openExternalDoc" commandName="Open External Documentation" description="Open the External documentation for the current task in the Ant editor" category="_x81oZjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EMTIYEeaSuf95bjPhew" elementId="org.eclipse.mylyn.tasks.ui.command.UpdateRepositoryConfiguration" commandName="Update Repository Configuration" category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EMjIYEeaSuf95bjPhew" elementId="org.eclipse.jdt.ui.JavaHierarchyPerspective" commandName="Java Type Hierarchy" description="Show the Java Type Hierarchy perspective" category="_x81oOzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EMzIYEeaSuf95bjPhew" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.inline" commandName="Inline" description="Inline a constant, local variable or function" category="_x81oUDIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81ENDIYEeaSuf95bjPhew" elementId="org.eclipse.jdt.ui.edit.text.java.indent" commandName="Correct Indentation" description="Corrects the indentation of the selected lines" category="_x81oZjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81ENTIYEeaSuf95bjPhew" elementId="org.eclipse.ui.ide.copyConfigCommand" commandName="Copy Configuration Data To Clipboard" description="Copies the configuration data (system properties, installed bundles, etc) to the clipboard." category="_x81oWjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81ENjIYEeaSuf95bjPhew" elementId="org.eclipse.jdt.ui.edit.text.java.search.exception.occurrences" commandName="Search Exception Occurrences in File" description="Search for exception occurrences of a selected exception type" category="_x81oVzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81ENzIYEeaSuf95bjPhew" elementId="org.eclipse.datatools.connectivity.commands.addrepository" commandName="New Repository Profile Command" description="Command to create a new repository profile" category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EODIYEeaSuf95bjPhew" elementId="org.eclipse.ui.part.previousPage" commandName="Previous Page" description="Switch to the previous page" category="_x81oZDIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EOTIYEeaSuf95bjPhew" elementId="org.eclipse.egit.ui.team.Synchronize" commandName="Synchronize" category="_x81oUjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EOjIYEeaSuf95bjPhew" elementId="org.eclipse.jdt.ui.edit.text.java.open.hierarchy" commandName="Quick Hierarchy" description="Show the quick hierarchy of the selected element" category="_x81oZDIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EOzIYEeaSuf95bjPhew" elementId="org.eclipse.wst.xsl.debug.ui.launchshortcut.run" commandName="Run XSLT Transformation" description="Create a configuration to debug an XSLT transformation" category="_x81oRzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EPDIYEeaSuf95bjPhew" elementId="org.eclipse.wst.sse.ui.format" commandName="Format" category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EPTIYEeaSuf95bjPhew" elementId="org.eclipse.jpt.jpa.ui.generateEntities" commandName="Generate Entities from Tables..." category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EPjIYEeaSuf95bjPhew" elementId="org.eclipse.datatools.sqltools.result.removeAllInstances" commandName="Remove All Visible Results" category="_x81oTjIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EPzIYEeaSuf95bjPhew" elementId="org.eclipse.pde.ui.externalizeStrings" commandName="Externalize Strings in Plug-ins" description="Extract translatable strings from plug-in files" category="_x81oWzIYEeaSuf95bjPhew"/>
+  <commands xmi:id="_x81EQDIYEeaSuf95bjPhew" elementId="org.eclipse.egit.ui.team.GarbageCollect" comma

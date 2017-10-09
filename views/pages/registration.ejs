@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<% include ../partials/head %>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+			<% include ../partials/mainheader %>														
+			<br/>								
+				<form class="form-horizontal" role="form" action="registration" method="post">
+				<h3 class="login-align">User Registration</h3>
+				
+				<p class="login-align">Register yourself for availing all the features this site provides. After successful registration, you will receive an 
+				activation link on the email id provided by you at the time of registration.</p>
+				<br/>
+				<div class="form-group">										 
+					<label for="name" class="col-sm-2 control-label">
+						Name
+					</label>
+					<div class="col-sm-10">
+						<input class="form-control" name="name" id="inputName" type="text" placeholder="Enter Your Fullname" required="true">
+					</div>
+				</div>
+				<div class="form-group">										 
+					<label for="inputEmail3" class="col-sm-2 control-label">
+						Email
+					</label>
+					<div class="col-sm-10">
+						<input class="form-control" name="email" id="inputEmail3" type="email" placeholder="Enter Your Email ID" required="true">
+					</div>
+				</div>
+				<div class="form-group">
+					 
+					<label for="inputPassword3" class="col-sm-2 control-label">
+						Password
+					</label>
+					<div class="col-sm-10">
+						<input class="form-control" name="password" id="inputPassword3" type="password" placeholder="Enter Your Password" required="true">
+					</div>
+				</div>			
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						 
+						<button type="submit" class="btn btn-default">
+							Sign Up
+						</button>
+					</div>
+				</div>
+			</form>				
+							
+		</div>
+	</div>
+</div>
+<% include ../partials/footer %>
+</body>
+</html>

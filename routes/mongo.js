@@ -1,6 +1,6 @@
 // mongoose is an object modeling package for Node like ORM
 var mongoose = require('mongoose');
-var dbUrl = process.env.OPENSHIFT_MONGODB_DB_URL+'itargapp1' || 'mongodb://127.0.0.1/admin_coder';
+var dbUrl = process.env.OPENSHIFT_MONGODB_DB_URL+'admin_coder' || 'mongodb://127.0.0.1/admin_coder';
 console.log(dbUrl);
 
 var connection = mongoose.createConnection(dbUrl);

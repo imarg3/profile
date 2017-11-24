@@ -14,7 +14,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var mongo = require('./model/mongo');
+//var mongo = require('./model/mongo');
 var user = require('./model/user');
 
 var app = express();

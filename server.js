@@ -21,7 +21,6 @@ Object.assign=require('object-assign')
 
 var app = express();
 
-#app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 

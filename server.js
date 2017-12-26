@@ -1,9 +1,25 @@
-//  OpenShift sample Node application
-var express = require('express'),
-    app     = express(),
-    morgan  = require('morgan');
+/**
+  Module Dependencies
+
+  Mongoose will be our connection to MongoDB.
+  body-parser is used to examine POST calls.
+  method-override is used by express to create DELETE and PUT requests through forms.
+*/
+
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var morgan = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var routes = require('./routes/index');
+var users = require('./routes/users');
+//var mongo = require('./model/mongo');
+var user = require('./model/user');
     
 Object.assign=require('object-assign')
+
+var app = express();
 
 app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'));

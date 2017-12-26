@@ -21,7 +21,7 @@ Object.assign=require('object-assign')
 
 var app = express();
 
-app.engine('html', require('ejs').renderFile);
+#app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
@@ -31,6 +31,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// set the view engine to ejs
+app.set('view engine', 'ejs');
 
 app.use('/', routes);
 app.use('/users', users);

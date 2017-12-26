@@ -15,7 +15,7 @@
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",        
     "serve-favicon": "~2.3.0",	
-    "mongoose": "^4.4.20"
+    "mongoose": "^4.4.20",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "mocha": "^2.4.5",
@@ -34,7 +34,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/imarg3/itarg"
-  },
-  "author": "Arpit Gupta <garpit@cdac.in>",
-  "homepage": "www.itarg.in"
+  }  
 }

@@ -63,6 +63,7 @@
                        tab3 : 'Education',
                        tab4 : 'Skills',
                        tab5 : 'Projects',
-                       tab6 : 'Contact'                       
+                       tab6 : 'Contact',
+                       tab7 : 'My Blogs'                      
        }
 })();

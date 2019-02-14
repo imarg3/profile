@@ -273,7 +273,7 @@ p {
 /*--//education--*/
 /*--skills--*/
 .skills{
-	background:#5D3535;
+	/*background:#5D3535;*/
 }
 .bar-grids {
     padding: 0 4em;
@@ -288,7 +288,7 @@ p {
 }
 .bar-grids h6 {
     font-size: 1.1em;
-    color: #fff;
+    color: #312c2c;
     margin-bottom: 0.6em;
 }
 .bar-grids h6 span {

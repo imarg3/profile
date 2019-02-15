@@ -42,7 +42,7 @@ body a:hover{
 }
 .banner-info{
 	background: url(../images/dott.png)repeat 0px 0px;
-	padding: 4em 0;
+	padding: 2em 0;
 }
 .header-left img {
     width: 100%;
@@ -54,7 +54,7 @@ body a:hover{
 .header-right h1 {
     font-size: 2.5em;
     color: #fff;
-    margin: 0.5em 0 0;
+    margin: 0.3em 0 0;
 }
 .header-right h2 {
     font-size: 1.2em;
@@ -78,13 +78,13 @@ body a:hover{
 .header-right h6 {
     font-size: 18px;
     color: #C7C7C7;
-    margin-top: 0.8em;
-    letter-spacing: 6px;
+    margin-top: 0.4em;
+    letter-spacing: 4px;
 }
 ul.address {
-    margin-top: 2em;
+    margin-top: 1em;
     border-top: 1px solid #AFAFAF;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
 }
 ul.address li {
     display: block;

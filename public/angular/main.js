@@ -61,9 +61,9 @@
                        tab1 : 'About',
                        tab2 : 'Experience',
                        tab3 : 'Education',
-                       tab4 : 'Skills',
+                       tab4 : 'Work Area',
                        tab5 : 'Projects',
-                       tab6 : 'Contact',
+                       tab6 : 'Connect',
                        tab7 : 'My Blogs'                      
        }
 })();

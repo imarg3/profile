@@ -500,7 +500,7 @@ h2.resp-accordion {
 /*--//portfolio--*/
 /*--contact--*/
 .contact{
-	background:#5D3535;
+	/*background:#5D3535;*/
 }
 .contact-left iframe {
     width: 100%;
@@ -649,7 +649,7 @@ h2.resp-accordion {
 /*---- responsive-design -----*/
 @media(max-width:1366px){
 .about,.work,.education,.skills,.portfolio,.contact {
-    padding: 5em 0;
+    padding: 2em 0;
 }
 .work-right.work-right2 {
     min-height: 250px;

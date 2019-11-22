@@ -64,6 +64,6 @@
                        tab4 : 'Work Area',
                        tab5 : 'Projects',
                        tab6 : 'Connect',
-                       tab7 : 'My Blogs'                      
+                       tab7 : 'My Blogs'                     
        }
 })();

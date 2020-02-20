@@ -58,12 +58,13 @@
 	
 	// Arrays
        var tabs = {
+		   			   tab0 : 'Home',
                        tab1 : 'About',
                        tab2 : 'Experience',
                        tab3 : 'Education',
                        tab4 : 'Work Area',
-                       tab5 : 'Projects',
+                       tab5 : 'Accolades',
                        tab6 : 'Connect',
-                       tab7 : 'My Blogs'                     
+                       tab7 : 'My Blogs'                  
        }
 })();

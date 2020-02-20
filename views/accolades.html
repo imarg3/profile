@@ -1,0 +1,224 @@
+<!--
+Author: Arpit Gupta
+Author URL: www.arpitram.com, www.arpitram.in
+License: 
+License URL: 
+-->
+<!DOCTYPE html>
+<!-- The ng-app directive tells angular that the code below should be evaluated -->
+<html ng-app="ProfileApp">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119273668-1"></script>
+<script data-ad-client="ca-pub-1781382531168042" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119273668-1');
+</script>
+<title>Arpit Gupta</title>
+	<!-- CDN based url to call Angular JS Script -->
+    <!-- <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script> -->
+    <script src = "angular/google-angular.js"></script>
+<!--<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+-->
+<!--mobile apps-->
+<meta name="google-site-verification" content="gkx9RJEYEv6r7QgTkP-e88-aTPzB44vp0ZwQTwYRFKo" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="About Arpit Gupta" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link href="images/favicon.ico" rel="Shortcut Icon" />
+<script src="javascripts/jquery.min.js"></script>
+<link href="stylesheets/bootstrap_html.css" type="text/css" rel="stylesheet" media="all">
+<script src="javascripts/bootstrap.min.js"></script>
+<link href="stylesheets/style_contact.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="stylesheets/swipebox.css">
+<link href="stylesheets/ionicons.css" rel="stylesheet">
+<link href="stylesheets/ionicons.min.css" rel="stylesheet">
+<!--//Custom Theme files-->
+<script src="angular/main.js"></script>
+<!-- //js -->
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="javascripts/move-top.js"></script>
+<script type="text/javascript" src="javascripts/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->
+<style>
+  .bootstrap-demo{margin:30px;}
+</style>
+</head>
+<body ng-controller="TabsController">
+  <div class="bootstrap-demo">
+    <div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<i class="icon ion-android-menu"></i>&nbsp;Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="menuController as menus">
+				<div class="menu">
+					<ul class="nav navbar">
+                        <li ng-class="{ active: isSet(0) }"><a href="/" target="_blank"><i class="icon ion-ios-home"></i>&nbsp;&nbsp;{{ menus.menu.tab0 }}</a></li>
+                        <li ng-class="{ active: isSet(4) }"><a href="/workarea"><i class="icon ion-android-desktop"></i>&nbsp;&nbsp;{{ menus.menu.tab4 }}</a></li>						
+						<li ng-class="{ active: isSet(7) }"><a href="https://arpitram.tumblr.com/" target="_blank"><i class="icon ion-ios-book"></i>&nbsp;&nbsp;{{ menus.menu.tab7 }}</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>				
+           
+    <div class="page-header">
+        <h1>Accolades <small>(Awards/Certificates)</small></h1>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-6 col-md-4"> <!-- column 1 -->
+        <div class="thumbnail-accolades"> <!--  thumbnail 1  -->
+          <img src="images/oca_certificate.jpg" alt="accolades"> <!-- image 1 -->
+          <div class="caption"> <!-- caption -->
+            <h3>Oracle Java Certificate</h3>
+            <p>Java Certification gave me an opportunity to focus on the core Java concepts.</p>
+            <!-- <p><a href="https://education.oracle.com/oracle-certified-professional-java-se-8-programmer/trackp_357" target="_blank" class="btn btn-primary" role="button">Certification</a>
+             <a href="#" class="btn btn-default" role="button">Add to Wishlist</a> --></p>  <!-- btn 2 -->
+          </div>
+        </div>
+      </div>
+	  
+      <div class="col-sm-6 col-md-4"> <!-- column 2 -->
+        <div class="thumbnail-accolades"> <!-- thumbnail 2 -->
+          <img src="images/mcitp1.jpg" alt="accolades">  <!-- image 2 -->
+          <div class="caption">  <!-- caption -->
+            <h3>MCITP Certificate</h3>
+            <p>This certification helped me in focussing more on Windows Server Features.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4"> <!-- column 3 -->
+        <div class="thumbnail-accolades"> <!-- thumbnail 3 -->
+          <img src="images/mcitp2.jpg" alt="accolades">  <!-- image 3 -->
+          <div class="caption">  <!-- caption -->
+            <h3>MCTS Certificate</h3>
+            <p>This certification helped me in becoming Microsoft Certified Technology Specialist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail-accolades">
+          <img src="images/python-certificate.png" alt="accolades">
+          <div class="caption">  <!-- caption -->
+            <h3>Python Certificate</h3>
+            <p>This Python Certification covers the basic understanding of Python.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail-accolades">
+          <img src="images/mongo_db.jpg" alt="accolades">
+          <div class="caption">  <!-- caption -->
+            <h3>MongoDB Certificate</h3>
+            <p>This Certification helped me understanding Mongo Database for Java Programming.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail-accolades">
+          <img src="images/StarAward1.jpg" alt="accolades">
+          <div class="caption">  <!-- caption -->
+            <h3>CDAC Star Award</h3>
+            <p>Received Star Performance Award for contributing towards R&amp;D Projects.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail-accolades">
+        <img src="images/StarAward2.jpg" alt="accolades">
+        <div class="caption">  <!-- caption -->
+          <h3>CDAC Star Certificate</h3>
+          <p>Received Certification of Appreciation for contributing towards R&amp;D Projects.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail-accolades">
+        <img src="images/seed-ccna.jpg" alt="accolades">
+        <div class="caption">  <!-- caption -->
+          <h3>CCNA Certificate</h3>
+          <p>CCNA Certificate from SEED Infotech for completing CCNA concepts.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail-accolades">
+        <img src="images/engg-degree.jpg" alt="accolades">
+        <div class="caption">  <!-- caption -->
+          <h3>Honours Degree Certificate</h3>
+          <p>Honours Degree for completing Bachelor of Engineering in E&amp;TC.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="page-header">
+    <h1>CDAC STAR PERFORMER AWARD</h1>
+  </div>
+  <!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+  <!-- 4:3 aspect ratio -->
+  <!-- <div class="embed-responsive embed-responsive-4by3"> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aVLZ9Wk1Mls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>© 2020 Arpit Gupta Profile. All rights reserved. Visit Profile on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-social-linkedin"></i>&nbsp;<a href="https://in.linkedin.com/in/arpitram3" target="_blank">Linkedin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-social-twitter"></i>&nbsp;<a href="https://twitter.com/@arpitram3" target="_blank">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-social-facebook"></i>&nbsp;<a href="http://www.facebook.com/arg3988" target="_blank">Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-social-instagram"></i><a href="https://www.instagram.com/arpitram3/" target="_blank">&nbsp;Instagram</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-social-github"></i><a href="https://github.com/imarg3" target="_blank">&nbsp;Github</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-help-buoy"></i><a href="https://hub.docker.com/u/admincoder" target="_blank">&nbsp;DockerHub</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon ion-social-youtube"></i><a href="https://www.youtube.com/channel/UCjnO-WdQxithJ5a6hcKjwpw" target="_blank">&nbsp;Youtube</a></p>
+    </div>
+</div>
+<!--//footer-->
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear' 
+        };
+        
+        $().UItoTop({ easingType: 'easeOutQuart' });
+        
+    });
+</script>
+<!--//smooth-scrolling-of-move-up-->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="javascripts/bootstrap.js"></script>
+</body>
+</html>

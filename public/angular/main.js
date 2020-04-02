@@ -52,19 +52,11 @@
 		
 	}]);
 	
-	app.controller('menuController', function(){
-              this.menu = tabs; // menu is the property
+	app.controller('menuController', function($scope){
+              $scope.menu = tabs; // menu is the property
     });
 	
 	// Arrays
-       var tabs = {
-		   			   tab0 : 'Home',
-                       tab1 : 'About',
-                       tab2 : 'Experience',
-                       tab3 : 'Education',
-                       tab4 : 'Work Area',
-                       tab5 : 'Accolades',
-                       tab6 : 'Connect',
-                       tab7 : 'My Blogs'                  
-       }
+    var tabs = ['Home', 'About', 'Experience', 'Education', 'Work Area', 'Accolades', 'Connect', 
+					'Blogs', 'Learn'];       
 })();

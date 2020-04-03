@@ -97,7 +97,7 @@ ul.address li ul.address-text li {
 	font-weight: 100;
 }
 ul.address li ul.address-text li:nth-child(1){
-	width: 20%;
+	width: 30%;
 }
 ul.address li ul.address-text li a {
     color: #24292e;
@@ -738,7 +738,8 @@ h3.title {
 .about-left {
     float: left;
     width: 65%;
-	padding-left: 0;
+    padding-left: 0;
+    text-align: justify;
 }
 .about-right {
     float: right;

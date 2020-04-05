@@ -60,8 +60,40 @@ License URL:
 <!--//end-smooth-scrolling-->
 </head>
 <body ng-controller="TabsController">
+	
+	<!--top-nav-->
+	
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<i class="icon ion-android-menu"></i>&nbsp;Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="menuController as menus">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li ng-class="{ active: isSet(1) }"><a href ng-click="setTab(1)" class="scroll"><i class="icon ion-ios-person"></i>&nbsp;&nbsp;{{ menu[1] }}</a></li>
+						<li ng-class="{ active: isSet(4) }"><a href="/workarea"><i class="icon ion-android-desktop"></i>&nbsp;&nbsp;{{ menu[4] }}</a></li>
+						<li ng-class="{ active: isSet(5) }"><a href="/accolades"><i class="icon ion-ribbon-b"></i>&nbsp;&nbsp;{{ menu[5] }}</a></li>
+						<li ng-class="{ active: isSet(2) }"><a href ng-click="setTab(2)" class="scroll"><i class="icon ion-pricetags"></i>&nbsp;&nbsp;{{ menu[2] }}</a></li>
+						<li ng-class="{ active: isSet(3) }"><a href ng-click="setTab(3)" class="scroll"><i class="icon ion-university"></i>&nbsp;&nbsp;{{ menu[3] }}</a></li>						
+						<li ng-class="{ active: isSet(6) }"><a href ng-click="setTab(6)" target="_blank"><i class="icon ion-ios-contact"></i>&nbsp;&nbsp;{{ menu[6] }}</a></li>
+						<li><a href="https://arpitram.tumblr.com/" target="_blank"><i class="icon ion-ios-book"></i>&nbsp;&nbsp;{{ menu[7] }}</a></li>
+						<li><a href="https://repo.arpitram.com/" target="_blank"><i class="icon ion-fork-repo"></i>&nbsp;&nbsp;{{ menu[8] }}</a></li>
+						<li><a href="https://codewitharpit.teachable.com/" target="_blank"><i class="icon ion-code"></i>&nbsp;&nbsp;{{ menu[9] }}</a></li>						
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>				
+    
+	<!--//top-nav-->
+
 	<!--banner-->
-	<div id="home" class="banner">
+	<div id="home" class="banner" ng-show="isSet(1)">
 		<div class="banner-info">
 			<div class="container">
 				<div class="col-md-4 header-left">
@@ -116,35 +148,7 @@ License URL:
 		</div>
 	</div>
 	<!--//banner-->
-	<!--top-nav-->
-	
-	<div class="top-nav wow">
-		<div class="container">
-			<div class="navbar-header logo">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<i class="icon ion-android-menu"></i>&nbsp;Menu
-				</button>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="menuController as menus">
-				<div class="menu">
-					<ul class="nav navbar">
-						<li ng-class="{ active: isSet(1) }"><a href ng-click="setTab(1)" class="scroll"><i class="icon ion-ios-person"></i>&nbsp;&nbsp;{{ menu[1] }}</a></li>
-						<li ng-class="{ active: isSet(2) }"><a href ng-click="setTab(2)" class="scroll"><i class="icon ion-pricetags"></i>&nbsp;&nbsp;{{ menu[2] }}</a></li>
-						<li ng-class="{ active: isSet(3) }"><a href ng-click="setTab(3)" class="scroll"><i class="icon ion-university"></i>&nbsp;&nbsp;{{ menu[3] }}</a></li>
-						<li ng-class="{ active: isSet(4) }"><a href="/workarea"><i class="icon ion-android-desktop"></i>&nbsp;&nbsp;{{ menu[4] }}</a></li>
-						<li ng-class="{ active: isSet(5) }"><a href="/accolades"><i class="icon ion-ribbon-b"></i>&nbsp;&nbsp;{{ menu[5] }}</a></li>
-						<li ng-class="{ active: isSet(6) }"><a href ng-click="setTab(6)" target="_blank"><i class="icon ion-ios-contact"></i>&nbsp;&nbsp;{{ menu[6] }}</a></li>
-						<li ng-class="{ active: isSet(7) }"><a href="https://arpitram.tumblr.com/" target="_blank"><i class="icon ion-ios-book"></i>&nbsp;&nbsp;{{ menu[7] }}</a></li>
-						<li ng-class="{ active: isSet(7) }"><a href="https://codewitharpit.teachable.com/" target="_blank"><i class="icon ion-code"></i>&nbsp;&nbsp;{{ menu[8] }}</a></li>
-					</ul>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-	</div>				
-    
-	<!--//top-nav-->
+
 	<!--about-->
 	<div id="about" class="about" ng-show="isSet(1)">
 		<div class="container">

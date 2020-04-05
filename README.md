@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-- [About Arpit Gupta](#about-arpit-gupta)
+- [Arpit Gupta Profile](#arpit-gupta-profile)
   * [OpenShift](#openshift)
     + [Features](#features)
   * [Creating a project](#creating-a-project)
@@ -20,17 +20,20 @@
 
 <!-- tocstop -->
 
-## About Arpit Gupta
+## Arpit Gupta Profile
 -----------------
 
-Hello Guys, I am Arpit Gupta. I am a Full Stack Developer & DevOps Engineer who loves to work in different software technologies like Java, Python, JavaScript, PHP, etc. I am an avid lover of open source technologies.
+Hello Guys, I am Arpit Gupta. I am a Full Stack Developer & DevOps Engineer who loves to work on different software programming languages such as Java, Python, JavaScript, PHP, etc & on various open source technologies. I am an avid lover of open source technologies.
+
+This project has been deployed on Openshift Platform as as service. With Red Hat OpenShift Online, one can quickly build, deploy, and scale containerized applications in the public cloud.
 
 ### OpenShift
 
-There are four reasons for me to get started with OpenShift:
+Here are few reasons for me to get started with OpenShift:
 
   - It is free for 60-days
   - I love to connect with a open source technologies companies such as RedHat
+  - Quickly build, deploy & scale containerized apps
   - Source-to-Image Container support
   - Kubernetes driven web console
 

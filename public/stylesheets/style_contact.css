@@ -42,10 +42,10 @@ body a:hover{
 }
 .banner-info{
 	/*background: url(../images/dott.png)repeat 0px 0px;*/
-	padding: 2em 0;
+	padding: 0 0;
 }
 .header-left img {
-    width: 100%;
+    width: 80%;
     border: 5px solid rgba(255, 255, 255, 0.68);
 }
 .header-right {
@@ -110,6 +110,7 @@ ul.address li ul.address-text li a:hover{
 /*--top-nav--*/
 .top-nav {
     background: #008B8B;
+    /*background: #416868;*/
 }
 .nav > li {
     display: inline-block;
@@ -655,7 +656,7 @@ h2.resp-accordion {
 /*---- responsive-design -----*/
 @media(max-width:1366px){
 .about,.work,.education,.skills,.portfolio,.contact {
-    padding: 2em 0;
+    padding: 1em 0;
 }
 .work-right.work-right2 {
     min-height: 250px;

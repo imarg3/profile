@@ -58,5 +58,5 @@
 	
 	// Arrays
     var tabs = ['Home', 'About', 'Experience', 'Education', 'Work Area', 'Accolades', 'Connect', 
-					'Blogs', 'Learn'];       
+					'Blogs', 'Repo', 'Learn'];       
 })();

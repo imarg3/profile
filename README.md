@@ -2,21 +2,14 @@
 
 <!-- toc -->
 
-- [Node.js sample app on OpenShift!](#nodejs-sample-app-on-openshift)
-  * [OpenShift Origin v3 setup](#openshift-origin-v3-setup)
-    + [Running a virtual machine with Vagrant](#running-a-virtual-machine-with-vagrant)
-    + [Starting a Docker container](#starting-a-docker-container)
-    + [Downloading the Binary](#downloading-the-binary)
-    + [Running an Ansible playbook](#running-an-ansible-playbook)
+- [About Arpit Gupta](#about-arpit-gupta)
+  * [OpenShift](#openshift)
+    + [Features](#features)
   * [Creating a project](#creating-a-project)
-  * [Creating new apps](#creating-new-apps)
-    + [Create a new app from source code (method 1)](#create-a-new-app-from-source-code-method-1)
-    + [Create a new app from a template (method 2)](#create-a-new-app-from-a-template-method-2)
+    + [App template (method 2)](#app-template)
     + [Build the app](#build-the-app)
     + [Deploy the app](#deploy-the-app)
     + [Configure routing](#configure-routing)
-    + [Create a new app from an image (method 3)](#create-a-new-app-from-an-image-method-3)
-    + [Setting environment variables](#setting-environment-variables)
     + [Success](#success)
     + [Pushing updates](#pushing-updates)
   * [Debugging](#debugging)
@@ -27,36 +20,23 @@
 
 <!-- tocstop -->
 
-## Node.js sample app on OpenShift!
+## About Arpit Gupta
 -----------------
 
-This example will serve a welcome page and the current hit count as stored in a database.
+Hello Guys, I am Arpit Gupta. I am a Full Stack Developer & DevOps Engineer who loves to work in different software technologies like Java, Python, JavaScript, PHP, etc. I am an avid lover of open source technologies.
 
-### OpenShift Origin v3 setup
+### OpenShift
 
-There are four methods to get started with OpenShift v3:
+There are four reasons for me to get started with OpenShift:
 
-  - Running a virtual machine with Vagrant
-  - Starting a Docker container
-  - Downloading the binary
-  - Running an Ansible playbook
+  - It is free for 60-days
+  - I love to connect with a open source technologies companies such as RedHat
+  - Source-to-Image Container support
+  - Kubernetes driven web console
 
-#### Running a virtual machine with Vagrant
+#### Features
 
-One option is to use the Vagrant all-in-one launch as described in the [OpenShift Origin All-In-One Virtual Machine](https://www.openshift.org/vm/). This option works on Mac, Windows and Linux, but requires that you install [Vagrant](https://www.vagrantup.com/downloads.html) running [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-
-#### Starting a Docker container
-
-Another option is running the OpenShift Origin Docker container image from [Docker Hub](https://hub.docker.com/r/openshift/origin/) launch as described in the [Getting Started for Administrators](https://docs.openshift.org/latest/getting_started/administrators.html#running-in-a-docker-container). This method is supported on Fedora, CentOS, and Red Hat Enterprise Linux (RHEL) hosts only.
-
-#### Downloading the Binary
-
-Red Hat periodically publishes OpenShift Origin Server binaries for Linux, which you can download on the OpenShift Origin GitHub [Release](https://github.com/openshift/origin/releases) page. Instructions on how to install and launch the Openshift Origin Server from binary are described in [Getting Started for Administrators](https://docs.openshift.org/latest/getting_started/administrators.html#downloading-the-binary).
-
-#### Running an Ansible playbook
-
-Outlined as the [Advanced Installation](https://docs.openshift.org/latest/install_config/install/advanced_install.html) method for poduction environments, OpenShift Origin is also installable via Ansible playbook made avaialble on the GitHub [openshift-ansible](https://github.com/openshift/openshift-ansible) repo.
-
+One option is to use the Openshift is that it provides an easy to access web and console based access such as described in the [OpenShift Website](https://www.openshift.org/).
 
 ### Creating a project
 
@@ -69,25 +49,7 @@ That's it, project has been created.  Though it would probably be good to set yo
 
         $ oc project nodejs-echo
 
-### Creating new apps
-
-You can create a new OpenShift application using the web console or by running the `oc new-app` command from the CLI. With the  OpenShift CLI there are three ways to create a new application, by specifying either:
-
-- [source code](https://docs.openshift.com/enterprise/3.0/dev_guide/new_app.html#specifying-source-code)
-- [OpenShift templates](https://docs.openshift.com/enterprise/3.0/dev_guide/new_app.html#specifying-a-template)
-- [DockerHub images](https://docs.openshift.com/enterprise/3.0/dev_guide/new_app.html#specifying-an-image)
-
-#### Create a new app from source code (method 1)
-
-Pointing `oc new-app` at source code kicks off a chain of events, for our example run:
-
-        $ oc new-app https://github.com/openshift/nodejs-ex -l name=myapp
-
-The tool will inspect the source code, locate an appropriate image on DockerHub, create an ImageStream for that image, and then create the right build configuration, deployment configuration and service definition.
-
-(The -l flag will apply a label of "name=myapp" to all the resources created by new-app, for easy management later.)
-
-#### Create a new app from a template (method 2)
+#### App template
 
 We can also [create new apps using OpenShift template files](https://docs.openshift.com/enterprise/3.0/dev_guide/new_app.html#specifying-a-template). Clone the demo app source code from [GitHub repo](https://github.com/openshift/nodejs-ex) (fork if you like).
 
@@ -168,52 +130,6 @@ This could also be accomplished by running:
 
 Now navigate to the newly created Node.js web app at the hostname we just configured, for our example it was simply [https://10.2.2.2](https://10.2.2.2).
 
-#### Create a new app from an image (method 3)
-
-You may have noticed the index page "Page view count" reads "No database configured". Let's fix that by adding a MongoDB service. We could use the second OpenShift template example (`nodejs-mongodb.json`) but for the sake of demonstration let's point `oc new-app` at a DockerHub image:
-
-        $ oc new-app centos/mongodb-26-centos7 \
-        $ -e MONGODB_USER=admin,MONGODB_DATABASE=mongo_db,MONGODB_PASSWORD=secret,MONGODB_ADMIN_PASSWORD=super-secret
-
-The `-e` flag sets the environment variables we want used in the configuration of our new app.
-
-Running `oc status` or checking the web console will reveal the address of the newly created MongoDB:
-
-	In project nodejs-echo on server https://10.2.2.2:8443
-
-	svc/mongodb-26-centos7 - 172.30.0.112:27017
-	  dc/mongodb-26-centos7 deploys istag/mongodb-26-centos7:latest
-	    deployment #1 running for 43 seconds - 1 pod
-
-	http://10.2.2.2 to pod port 8080-tcp (svc/nodejs-ex)
-	  dc/nodejs-ex deploys istag/nodejs-ex:latest <-
-	    bc/nodejs-ex builds https://github.com/openshift/nodejs-ex with openshift/nodejs:0.10
-	    deployment #1 deployed 14 minutes ago - 1 pod
-
-Note that the url for our new Mongo instance, for our example, is `172.30.0.112:27017`, yours will likely differ.
-
-#### Setting environment variables
-
-To take a look at environment variables set for each pod, run `oc env pods --all --list`.
-
-We need to add the environment variable `MONGO_URL` to our Node.js web app so that it will utilize our MongoDB, and enable the "Page view count" feature. Run:
-
-        $ oc set env dc/nodejs-ex MONGO_URL='mongodb://admin:secret@172.30.0.112:27017/mongo_db'
-
-Then check `oc status` to see that an updated deployment has been kicked off:
-
-	In project nodejs-echo on server https://10.2.2.2:8443
-
-	svc/mongodb-26-centos7 - 172.30.0.112:27017
-	  dc/mongodb-26-centos7 deploys istag/mongodb-26-centos7:latest
-	    deployment #1 deployed 2 hours ago - 1 pod
-
-	http://10.2.2.2 to pod port 8080-tcp (svc/nodejs-ex)
-	  dc/nodejs-ex deploys istag/nodejs-ex:latest <-
-	    bc/nodejs-ex builds https://github.com/openshift/nodejs-ex with openshift/nodejs:0.10
-	    deployment #2 deployed about a minute ago - 1 pod
-	    deployment #1 deployed 2 hours ago
-
 #### Success
 
 You should now have a Node.js welcome page showing the current hit count, as stored in a MongoDB database.
@@ -240,7 +156,7 @@ If you get stuck at some point, or think that this document needs further detail
 
 ### Compatibility
 
-This repository is compatible with Node.js 4 and higher, excluding any alpha or beta versions.
+This repository is compatible with Node.js 6 and higher, excluding any alpha or beta versions.
 
 ### License
 

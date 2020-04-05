@@ -1,14 +1,14 @@
 This directory contains a Jenkinsfile which can be used to build
-nodejs-ex using an OpenShift build pipeline.
+arpit-profile using an OpenShift build pipeline.
 
 To do this, run:
 
 ```bash
 # create the nodejs example as usual
-oc new-app https://github.com/openshift/nodejs-ex
+oc new-app https://github.com/imarg3/profile
 
 # now create the pipeline build controller from the openshift/pipeline
 # subdirectory
-oc new-app https://github.com/openshift/nodejs-ex \
-  --context-dir=openshift/pipeline --name nodejs-ex-pipeline
+oc new-app https://github.com/imarg3/profile \
+  --context-dir=openshift/pipeline --name arpit-profile-pipeline
 ```

@@ -97,8 +97,7 @@ ul.address li {
 ul.address li ul.address-text li {
     display: inline-block;
     font-size: 1.2em;
-    /* color: #416868; */
-    color: #333;
+    color: #416868;
     margin-top: 1em;
 	font-weight: 100;
 }

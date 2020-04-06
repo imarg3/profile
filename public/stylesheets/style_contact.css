@@ -58,7 +58,7 @@ body a:hover{
 .header-right h1 {
     font-size: 2.5em;
     /*color: #24292e;*/
-    color: #416868;;
+    color: #416868;
     margin: 0.3em 0 0;
 }
 .header-right h2 {
@@ -82,7 +82,7 @@ body a:hover{
 }
 .header-right h6 {
     font-size: 18px;
-    color: #416868;;
+    color: #416868;
     margin-top: 0.4em;
     letter-spacing: 4px;
 }
@@ -97,7 +97,8 @@ ul.address li {
 ul.address li ul.address-text li {
     display: inline-block;
     font-size: 1.2em;
-    color: #416868;
+    /* color: #416868; */
+    color: #333;
     margin-top: 1em;
 	font-weight: 100;
 }
@@ -105,7 +106,7 @@ ul.address li ul.address-text li:nth-child(1){
 	width: 30%;
 }
 ul.address li ul.address-text li a {
-    color: #416868;;
+    color: #416868;
 	text-decoration:none;
 }
 ul.address li ul.address-text li a:hover{
@@ -175,7 +176,7 @@ p {
 .about-right h5 {
     font-size: 2em;
     text-align: center;
-    color: #416868;;
+    color: #416868;
 }
 .about-right ul li {
     text-align: justify;
@@ -314,7 +315,7 @@ p {
 /*--SAP--*/
 ul.resp-tabs-list {  
 /*-- w3layouts --*/
-background: #416868;;
+background: #416868;
 }
 .sap_tabs{
 	clear:both;
